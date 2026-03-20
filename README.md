@@ -108,3 +108,14 @@ FROM Contact
 | 🏦 Accounts in Banking Industry | `SELECT Name, Industry FROM Account WHERE Industry = 'Banking'` |
 
 ---
+
+## 📏 Governor Limits
+
+> 🚦 Salesforce enforces these limits to ensure platform performance for all users.
+
+| 📊 Limit | 🔢 Value |
+|---|---|
+| ⚡ Max SOQL queries per transaction (synchronous) | **100** |
+| 📦 Max records returned per SOQL query | **50,000** |
+
+---
