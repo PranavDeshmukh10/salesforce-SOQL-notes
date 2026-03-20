@@ -94,3 +94,17 @@ FROM Contact
 > 💡 **Tip:** Any field ending in `__c` is a custom field created by your org's admin.
 
 ---
+
+---
+
+## ✅ Use Cases with WHERE Clause
+
+| 🎯 Use Case | 💻 SOQL Query |
+|---|---|
+| 🎂 Find Contacts whose birthday is Today | `SELECT Id, Name, Birthdate FROM Contact WHERE Birthdate = Today` |
+| 🔥 Publicly owned Accounts with Hot Rating | `SELECT Id, Name, Ownership, Rating FROM Account WHERE Rating = 'Hot' AND Ownership = 'Public'` |
+| 🌐 Working-Contacted Leads from Web | `SELECT Name, LeadSource, Status FROM Lead WHERE LeadSource = 'Web' AND Status = 'Working - Contacted'` |
+| 👤 Contacts whose FirstName is Lewis | `SELECT FirstName, LastName FROM Contact WHERE FirstName = 'Lewis'` |
+| 🏦 Accounts in Banking Industry | `SELECT Name, Industry FROM Account WHERE Industry = 'Banking'` |
+
+---
