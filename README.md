@@ -95,8 +95,6 @@ FROM Contact
 
 ---
 
----
-
 ## ✅ Use Cases with WHERE Clause
 
 | 🎯 Use Case | 💻 SOQL Query |
@@ -119,3 +117,11 @@ FROM Contact
 | 📦 Max records returned per SOQL query | **50,000** |
 
 ---
+
+<div align="center">
+
+### 🚀 Happy Querying!
+
+*Built with ❤️ for Salesforce Developers*
+
+</div>
