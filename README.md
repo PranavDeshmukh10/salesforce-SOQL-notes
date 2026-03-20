@@ -107,6 +107,23 @@ FROM Contact
 
 ---
 
+## 🔒 Escape & Reserved Characters
+
+| 🔑 Type | 🔤 Character | 📝 Notes |
+|---|---|---|
+| 🛡️ Escape character | `\` (backslash) | Used to escape special characters inside strings |
+| 🔒 Reserved characters | `\` and `'` | Both are reserved by Salesforce |
+
+**Example** — Query the account with Industry `App'arel`:
+
+```sql
+SELECT Id, Name, Industry
+FROM Account
+WHERE Industry = 'App\'arel'
+```
+
+---
+
 ## ⚠️ SOQL Limitations & FIELDS() Clause
 
 > ❌ You **cannot** use `*` to select all fields in SOQL — unlike SQL!
