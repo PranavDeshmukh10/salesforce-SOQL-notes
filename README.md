@@ -107,6 +107,21 @@ FROM Contact
 
 ---
 
+## ⚠️ SOQL Limitations & FIELDS() Clause
+
+> ❌ You **cannot** use `*` to select all fields in SOQL — unlike SQL!
+
+As a workaround, use the `FIELDS()` clause, but note the **max LIMIT is 200 records**.
+
+| 💻 Query | 📝 Description |
+|---|---|
+| `SELECT FIELDS(all) FROM Contact LIMIT 50` | 🌐 Query **all fields** (standard + custom) |
+| `SELECT FIELDS(standard) FROM Contact LIMIT 10` | 🏷️ Query all **standard fields** only |
+| `SELECT FIELDS(custom) FROM Contact LIMIT 10` | 🛠️ Query all **custom fields** only |
+| `SELECT FIELDS(custom), Id FROM Contact LIMIT 10` | 🛠️ Custom fields **plus Id** |
+
+---
+
 ## 📏 Governor Limits
 
 > 🚦 Salesforce enforces these limits to ensure platform performance for all users.
