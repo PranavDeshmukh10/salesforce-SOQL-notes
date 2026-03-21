@@ -154,6 +154,6 @@ As a workaround, use the `FIELDS()` clause, but note the **max LIMIT is 200 reco
 
 ### 🚀 Happy Querying!
 
-*Built with ❤️ for Salesforce Developers*
+*Built with ❤️ for Salesforce Developers!*
 
 </div>
